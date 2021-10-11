@@ -1,0 +1,124 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Comfortaa;
+}
+
+.wrapper{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/night.svg);
+	background-position: center;
+	background-size: cover;
+}
+.navbar{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+}
+nav{
+	flex: 1;
+	text-align: right;
+	padding: 5%;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 28px;
+	position: relative;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	float: right;
+}
+
+.navbar ul li::after{
+	content: '';
+	height: 2px;
+	width: 0;
+	background: #adcee0;
+	position: absolute;
+	left: 0;
+	border-radius: 5px;
+	bottom: -15px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+
+.content h1{
+	color: #fff;
+	text-align: center;
+	padding-top: 10%;
+	letter-spacing: 13px;
+	font-size: 75px;
+}
+.content h2{
+	color: #d0ebf7;
+	text-align: center;
+	padding-top: 3%;
+	font-size: 25px;
+	font-family: spartan;
+	font-weight: 100;
+}
+.logo{
+	width: 100px;
+	float: left;
+	transition: transform 0.4s linear;
+	cursor: pointer;
+}
+.logo:hover{
+	transform: scale(0.8);
+}
+.button{
+	margin-top: 48px;
+	margin-left: 45%;
+}
+.btn{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 15px;
+	text-transform: uppercase;
+	transition: color 0.4s linear;
+}
+.btn:hover{
+	background: #2C5364;
+	border: 1px solid #2C5364;
+	color: #adcee0;
+}
+.social-links{
+	display: inline-block;
+	margin-left: 25px;
+}
+.social-links a{
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 49px 98px;
+	transition: color 0.3s linear;
+	transition: transform 0.4s;
+
+}
+.social-links a:hover{
+	color: #24C6DC;
+	transform: scale(0.9);
+}
